@@ -32,10 +32,10 @@ class _AppButtonState extends State<AppButton> {
     return TextButton(
       onPressed: widget.onPressed,
       style: TextButton.styleFrom(
-        backgroundColor: widget.buttonColor, // Button color
+        backgroundColor: widget.buttonColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(widget.borderRadius), // Border radius
-        ), // Padding
+          borderRadius: BorderRadius.circular(widget.borderRadius),
+        ),
       ),
       child: Center(
         child: Text(

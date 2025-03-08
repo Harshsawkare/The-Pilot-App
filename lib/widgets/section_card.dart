@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_pilot_app/utils/constants.dart';
 
 import '../utils/app_theme.dart';
 import 'app_text.dart';
@@ -31,7 +32,7 @@ class SectionCard extends StatelessWidget {
                 topLeft: Radius.circular(8),
               ),
               child: Image.asset(
-                'assets/dots.png',
+                Constants.assetDots,
                 width: 100,
               ),
             ),
@@ -52,14 +53,14 @@ class SectionCard extends StatelessWidget {
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: AppTheme.shadowColor,
+                          color: AppTheme.deepShadowColor,
                           blurRadius: 10.2,
                           offset: Offset(0, 4),
                         )
                       ],
                     ),
                     child: Image.asset(
-                      'assets/folder.png',
+                      Constants.assetFolder,
                       width: 32,
                       height: 32,
                       scale: 2,

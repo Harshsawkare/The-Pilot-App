@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
+import 'package:the_pilot_app/utils/constants.dart';
 import 'package:the_pilot_app/widgets/app_text.dart';
 
 import '../utils/app_theme.dart';
@@ -20,7 +21,7 @@ class HomeView extends StatelessWidget {
           physics: const ClampingScrollPhysics(),
           child: Column(
             children: [
-              // Percentage Cards
+              // Info Cards
               const Row(
                 children: [
                   Expanded(
@@ -50,7 +51,7 @@ class HomeView extends StatelessWidget {
                 ],
               ),
 
-              // Homeroom Full-Width Card
+              // Homeroom Card
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Container(
@@ -69,7 +70,7 @@ class HomeView extends StatelessWidget {
                             topLeft: Radius.circular(8),
                           ),
                           child: Image.asset(
-                            'assets/dots.png',
+                            Constants.assetDots,
                           ),
                         ),
                       ),
@@ -81,9 +82,7 @@ class HomeView extends StatelessWidget {
                             borderRadius: const BorderRadius.only(
                               bottomRight: Radius.circular(8),
                             ),
-                            child: Image.asset(
-                              'assets/workspace.png',
-                            ),
+                            child: Image.asset(Constants.assetWorkspace),
                           ),
                         ),
                       ),
@@ -112,7 +111,7 @@ class HomeView extends StatelessWidget {
                 ),
               ),
 
-              // Staggered Grid View
+              // Section Cards
               StaggeredGrid.count(
                 crossAxisCount: 2,
                 mainAxisSpacing: 10,

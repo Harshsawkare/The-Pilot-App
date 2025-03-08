@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:the_pilot_app/utils/app_theme.dart';
+import 'package:the_pilot_app/utils/constants.dart';
 import 'package:the_pilot_app/widgets/app_text.dart';
 import '../controllers/navigation_controller.dart';
 
@@ -24,11 +25,15 @@ class NavigationView extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     children: [
+
+                      // Profile
                       SizedBox(
                         width: 40,
                         height: 40,
-                        child: Image.asset('assets/avatar.png'),
+                        child: Image.asset(Constants.assetAvatar),
                       ),
+
+                      // Name and screen title
                       const Padding(
                         padding: EdgeInsets.only(left: 8),
                         child: Column(
@@ -51,10 +56,12 @@ class NavigationView extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
+
+                      // Chat
                       SizedBox(
                         width: 40,
                         height: 40,
-                        child: Image.asset('assets/chat.png'),
+                        child: Image.asset(Constants.assetChat),
                       ),
                     ],
                   ),
@@ -70,6 +77,8 @@ class NavigationView extends StatelessWidget {
             backgroundColor: AppTheme.bgColor,
             onTap: controller.changePage,
             items: [
+
+              // Home
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home_rounded,
@@ -80,6 +89,8 @@ class NavigationView extends StatelessWidget {
                 ),
                 label: '',
               ),
+
+              // Stats
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.bar_chart_rounded,

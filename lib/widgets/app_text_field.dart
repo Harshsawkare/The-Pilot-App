@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_pilot_app/utils/constants.dart';
 
 import '../utils/app_theme.dart';
 
@@ -50,7 +51,7 @@ class _AppTextFieldState extends State<AppTextField> {
         color: AppTheme.headingColor,
         fontWeight: FontWeight.w400,
         fontSize: 14,
-        fontFamily: 'Inter',
+        fontFamily: Constants.fontFamily,
       ),
       cursorColor: widget.cursorColor,
       obscureText: widget.isPassword ? _obscureText : false,
@@ -59,7 +60,7 @@ class _AppTextFieldState extends State<AppTextField> {
           color: AppTheme.subHeadingColor,
           fontWeight: FontWeight.w400,
           fontSize: 14,
-          fontFamily: 'Inter',
+          fontFamily: Constants.fontFamily,
         ),
         hintText: widget.hintText,
         border: OutlineInputBorder(
@@ -88,6 +89,7 @@ class _AppTextFieldState extends State<AppTextField> {
                   size: 16,
                 ),
                 onPressed: () {
+                  // update password visibility
                   setState(() {
                     _obscureText = !_obscureText;
                   });

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:the_pilot_app/utils/app_theme.dart';
+import 'package:the_pilot_app/utils/constants.dart';
 
 class AppText extends StatelessWidget {
-
   final String text;
   final double fontSize;
   final FontWeight fontWeight;
@@ -25,7 +25,7 @@ class AppText extends StatelessWidget {
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
-        fontFamily: 'Inter',
+        fontFamily: Constants.fontFamily,
         color: color,
         fontStyle: fontStyle,
       ),
