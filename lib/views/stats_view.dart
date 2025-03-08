@@ -23,22 +23,25 @@ class StatsView extends StatelessWidget {
           children: [
 
             // Announcement section cards
-            SizedBox(
-              height: 124,
-              child: ListView.builder(
-                shrinkWrap: true,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                scrollDirection: Axis.horizontal,
-                itemCount: 5,
-                itemBuilder: (context, index) => const Padding(
-                  padding: EdgeInsets.only(right: 8),
-                  child: SizedBox(
-                    height: 124,
-                    width: 167,
-                    child: SectionCard(
-                      title: "Announcements",
-                      subtitle: "Your classroom awaits you",
-                      color: AppTheme.primaryColor,
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: SizedBox(
+                height: 124,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 5,
+                  itemBuilder: (context, index) => const Padding(
+                    padding: EdgeInsets.only(right: 8),
+                    child: SizedBox(
+                      height: 124,
+                      width: 167,
+                      child: SectionCard(
+                        title: "Announcements",
+                        subtitle: "Your classroom awaits you",
+                        color: AppTheme.primaryColor,
+                      ),
                     ),
                   ),
                 ),
