@@ -13,8 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Student Dashboard",
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: "The Pilot App",
+      theme: ThemeData(
+        splashFactory: NoSplash.splashFactory,
+        highlightColor: Colors.transparent,
+      ),
       initialRoute: '/splash',
       getPages: AppPages.routes,
     );

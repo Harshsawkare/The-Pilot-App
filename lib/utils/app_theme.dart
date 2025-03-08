@@ -11,5 +11,6 @@ class AppTheme {
 
   static const Color borderColor = Color.fromRGBO(197, 198, 204, 1);
   static const Color tileGreyColor = Color.fromRGBO(243, 243, 243, 1);
+  static const Color shadowColor = Color.fromRGBO(0, 0, 0, 0.25);
 
 }

@@ -7,7 +7,7 @@ class LoginController extends GetxController {
 
   void login() {
     isLoading.value = true;
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 1), () {
       isLoading.value = false;
       Get.offAllNamed('/nav'); // Navigate to the main app
     });

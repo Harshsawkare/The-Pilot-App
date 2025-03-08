@@ -7,6 +7,7 @@ class AppText extends StatelessWidget {
   final double fontSize;
   final FontWeight fontWeight;
   final Color color;
+  final FontStyle fontStyle;
 
   const AppText({
     super.key,
@@ -14,6 +15,7 @@ class AppText extends StatelessWidget {
     this.fontSize = 14.0,
     this.fontWeight = FontWeight.normal,
     this.color = AppTheme.headingColor,
+    this.fontStyle = FontStyle.normal,
   });
 
   @override
@@ -25,6 +27,7 @@ class AppText extends StatelessWidget {
         fontWeight: fontWeight,
         fontFamily: 'Inter',
         color: color,
+        fontStyle: fontStyle,
       ),
     );
   }
